@@ -17,13 +17,12 @@ public class Worker {
         this.surname = surname;
         this.name = name;
         this.age = age;
-        ///////
-        setGender(gender); // Используем сеттер для установки значения пола
+        this.setGender(gender); // Используем сеттер для установки значения пола
         this.address = address;
         this.contacts = contacts;
     }
 
-    // Геттеры и сеттеры
+    // Гетери та сетери
     public int getId() {
         return id;
     }
@@ -107,7 +106,7 @@ public class Worker {
                 "; age = " + age +
                 "; gender = " + getGenderAsString() + ";" + "\n" +
                 "address = " + address + ";" + "\n"+
-                "contacts=" + contacts + ")" +  ")"+ "\n" ;
+                "contacts=" + contacts + ")"+ "\n" ;
     }
 
     // Додаю вкладений клас Gender з набором статичних констант
@@ -133,7 +132,7 @@ public class Worker {
         public Address() {
         }
 
-        // Конструкторз усіма параметрами
+        // Конструктор з усіма параметрами
         public Address(String country, String region, String town, String street, String house, String apartment) {
             this.country = country;
             this.region = region;
@@ -143,7 +142,7 @@ public class Worker {
             this.apartment = apartment;
         }
 
-        // Геттеры и сеттеры
+        // Гетери та сетери
         public String getCountry() {
             return country;
         }
@@ -191,22 +190,22 @@ public class Worker {
         }
     }
 
-    // Вложенный класс Contacts
+    // Вкладений клас Contacts
     public static class Contacts {
         private String mail;
         private String phone;
 
-        // Конструктор без параметров
+        // Конструктор без параметрів
         public Contacts() {
         }
 
-        // Конструктор с параметрами
+        // Конструктор з параметрами
         public Contacts(String mail, String phone) {
             this.mail = mail;
             this.phone = phone;
         }
 
-        // Геттеры и сеттеры
+        // Гетери та сетери
         public String getMail() {
             return mail;
         }
@@ -223,7 +222,7 @@ public class Worker {
             this.phone = phone;
         }
 
-        // Переопределение метода toString
+        // Перевизначення методу toString
         @Override
         public String toString() {
             return "Email: " + mail + ", Phone: " + phone;

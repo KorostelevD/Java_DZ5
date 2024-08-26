@@ -1,4 +1,6 @@
 package pack;
+
+import pack.Worker;
 import pack.Worker.Address;
 import pack.Worker.Contacts;
 
