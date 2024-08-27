@@ -17,7 +17,7 @@ public class Worker {
         this.surname = surname;
         this.name = name;
         this.age = age;
-        this.setGender(gender); // Используем сеттер для установки значения пола
+        this.setGender(gender); //Використовуємо сеттер
         this.address = address;
         this.contacts = contacts;
     }
